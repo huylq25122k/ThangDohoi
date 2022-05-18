@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ControllerSpring" />
+        <module name="DAO" />
+        <module name="SpringS" />
+        <module name="RepositoryS" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Controller" target="8" />
+      <module name="Dao" target="8" />
+      <module name="Service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ControllerSpring" options="-parameters" />
+      <module name="DAO" options="-parameters" />
+      <module name="Repository" options="-parameters" />
+      <module name="RepositoryS" options="-parameters" />
+      <module name="Service" options="-parameters" />
+      <module name="SpringS" options="-parameters" />
+    </option>
+  </component>
+</project>
